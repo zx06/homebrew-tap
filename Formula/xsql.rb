@@ -11,7 +11,7 @@ class Xsql < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/zx06/xsql/releases/download/v0.0.1/xsql_0.0.1_darwin_amd64.tar.gz"
-      sha256 "40f6e28515d384ea8a997e6f96e14e42608e6775881213fe90df78523ad6b095"
+      sha256 "8a5c8de1c11541881e2c97cd79e729eab98f0bca645dad126695db94d5d5bbc1"
 
       def install
         bin.install "xsql"
@@ -19,7 +19,7 @@ class Xsql < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/zx06/xsql/releases/download/v0.0.1/xsql_0.0.1_darwin_arm64.tar.gz"
-      sha256 "cc3bdcc5e72def4c5f0d925b5056a4d3a65e44f77ed53a490f312ea25e8be747"
+      sha256 "8019a8b64ef68b04d7a0c29c3fb11aa17f19d3447c2cbb5daaccf1d3f0dd8fe6"
 
       def install
         bin.install "xsql"
@@ -30,14 +30,14 @@ class Xsql < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/zx06/xsql/releases/download/v0.0.1/xsql_0.0.1_linux_amd64.tar.gz"
-      sha256 "df38f0f18f9188f6970c9804698ddc4ab7ec497d48f89022dfebe195c3b53ad7"
+      sha256 "e681b47acaefb60546c43b54e148e1b378aa6afb5c0b9e8b4bcb10e83e7919fd"
       def install
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/zx06/xsql/releases/download/v0.0.1/xsql_0.0.1_linux_arm64.tar.gz"
-      sha256 "73b55b1f0ddcbf23701d5304954b172cf9d44f578b28a5d4b2f4a679cfabb236"
+      sha256 "e5d358d5024b0aa02b94bd7bf4100c750f019545dcf93955df333d659ed66aea"
       def install
         bin.install "xsql"
       end
