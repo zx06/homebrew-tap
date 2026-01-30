@@ -5,21 +5,21 @@
 class Xsql < Formula
   desc "AI-first cross-database CLI tool with SSH proxy support"
   homepage "https://github.com/zx06/xsql"
-  version "0.0.3"
+  version "0.0.4-rc1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.3/xsql_0.0.3_darwin_amd64.tar.gz"
-      sha256 "79e62ec5eef58f7ca7d3e168429de0bee838db2dffeab3434c2d72a3614357e1"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.4-rc1/xsql_0.0.4-rc1_darwin_amd64.tar.gz"
+      sha256 "2294b1f9045dae11cef27237010b49686903c33eda9add7daf6ee49aa0bc5789"
 
       def install
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.3/xsql_0.0.3_darwin_arm64.tar.gz"
-      sha256 "1dcc6df81e85f051d91cdb903e1ba2bc0705a430f78a9ecdb0ef014dfe48cc57"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.4-rc1/xsql_0.0.4-rc1_darwin_arm64.tar.gz"
+      sha256 "1125bb4bf94d1839ad6f7ca580e276174716ed5c09f69c842f8b745486952dad"
 
       def install
         bin.install "xsql"
@@ -29,15 +29,15 @@ class Xsql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.3/xsql_0.0.3_linux_amd64.tar.gz"
-      sha256 "4077241bf71423c1490d840526ca83829a85d860fb7994d01b6c47a96ff4c2b3"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.4-rc1/xsql_0.0.4-rc1_linux_amd64.tar.gz"
+      sha256 "c27d30d54cb31ab34099028f8abb10d491e06efac5c702afaf97a3a26f88300f"
       def install
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.3/xsql_0.0.3_linux_arm64.tar.gz"
-      sha256 "12111aa0576d5ee9582108d5bf65947a01d066444fb93d7229ee0497ece2fc0c"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.4-rc1/xsql_0.0.4-rc1_linux_arm64.tar.gz"
+      sha256 "dc9c2241ed8963fbf7398389b096f296a0e9409a1243a11aebba16400a96762d"
       def install
         bin.install "xsql"
       end
