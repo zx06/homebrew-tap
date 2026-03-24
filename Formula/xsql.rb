@@ -5,21 +5,21 @@
 class Xsql < Formula
   desc "AI-first cross-database CLI tool with SSH proxy support"
   homepage "https://github.com/zx06/xsql"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.9/xsql_0.0.9_darwin_amd64.tar.gz"
-      sha256 "a5d4e745c8ab14ac495c2c5dbaf61ec8bffffa2ffd0b7401d17e924370b2e17f"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.10/xsql_0.0.10_darwin_amd64.tar.gz"
+      sha256 "dd65aa3910d30722274295bf563a23ab9211e15ba427cea21eb5f9e9bd54693c"
 
       define_method(:install) do
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.9/xsql_0.0.9_darwin_arm64.tar.gz"
-      sha256 "ac0ee216be6e4ac8d8e652b033c0b51e5170a0c70cac45d75a18379e569f7d30"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.10/xsql_0.0.10_darwin_arm64.tar.gz"
+      sha256 "11a4f9a6215bdd94da20b421525803ba71be8d7e3f0024865c44e42aad73aedb"
 
       define_method(:install) do
         bin.install "xsql"
@@ -29,15 +29,15 @@ class Xsql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.9/xsql_0.0.9_linux_amd64.tar.gz"
-      sha256 "90bf896affcde017e2753686c22b3b3d8a21d1e8e08e9e091caaa00a181fb5d6"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.10/xsql_0.0.10_linux_amd64.tar.gz"
+      sha256 "088e8662f58fb570c2802d05ba6347268c0a70e483518ed8f8bee30ff88be782"
       define_method(:install) do
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.0.9/xsql_0.0.9_linux_arm64.tar.gz"
-      sha256 "1afd8249d84ba002100cf5b2c103fa29e79121630f5af0bac366e8323e1805ea"
+      url "https://github.com/zx06/xsql/releases/download/v0.0.10/xsql_0.0.10_linux_arm64.tar.gz"
+      sha256 "682423d5dacb33b74a7dc6280ebe89c09af38e33365838b85e5197193a858bd3"
       define_method(:install) do
         bin.install "xsql"
       end
