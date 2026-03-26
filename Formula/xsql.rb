@@ -5,21 +5,21 @@
 class Xsql < Formula
   desc "AI-first cross-database CLI tool with SSH proxy support"
   homepage "https://github.com/zx06/xsql"
-  version "0.1.0-alpha.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zx06/xsql/releases/download/v0.1.0-alpha.1/xsql_0.1.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "f0388385602af23a7983397c8f4ff47db1f95f4be5926fee644056879844bc0a"
+      url "https://github.com/zx06/xsql/releases/download/v0.1.0/xsql_0.1.0_darwin_amd64.tar.gz"
+      sha256 "a9f58f51348ee38d42a29eb10ed88a48827f2b76fc2d167d1ba15a0c7a9fb384"
 
       define_method(:install) do
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zx06/xsql/releases/download/v0.1.0-alpha.1/xsql_0.1.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "a69f5c50d31f383efbf0a418969436258ec6f7fae91e9a65aefb05cc9a591e0f"
+      url "https://github.com/zx06/xsql/releases/download/v0.1.0/xsql_0.1.0_darwin_arm64.tar.gz"
+      sha256 "356a17189fbc724dada1d9834b858b103b64a70778502f02e13815bd9661c44e"
 
       define_method(:install) do
         bin.install "xsql"
@@ -29,15 +29,15 @@ class Xsql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.1.0-alpha.1/xsql_0.1.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "8fc2ca02d1e7028a0bf42e1add87fc11450eff02af8c189b2957b50af4d47b07"
+      url "https://github.com/zx06/xsql/releases/download/v0.1.0/xsql_0.1.0_linux_amd64.tar.gz"
+      sha256 "0ccac9d0ec7a0eef3849822c8c99201613247817cbc85d5f75951a62270ac3d8"
       define_method(:install) do
         bin.install "xsql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zx06/xsql/releases/download/v0.1.0-alpha.1/xsql_0.1.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "bc036cf7b03984f791934ba5a07d611e96ba05e742bd96ce6e629ca926cddd1e"
+      url "https://github.com/zx06/xsql/releases/download/v0.1.0/xsql_0.1.0_linux_arm64.tar.gz"
+      sha256 "2981fd48c1b46b0757689c117cc38dcf7815aec777a6d00528b75d81e0e3d970"
       define_method(:install) do
         bin.install "xsql"
       end
